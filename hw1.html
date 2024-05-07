@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>airbnb</title>
+  <style>
+    .right {
+    float: right; /* 요소를 오른쪽으로 이동 */
+    }
+
+    /* 이미지 크기 조절 */
+    .resized-image {
+    width: 200px; /* 원하는 너비로 조절 */
+    height: auto; /* 높이는 자동으로 조절되어 비율 유지 */
+    }
+
+    ul {
+    list-style-type: none; /* 목록 기호 제거 */
+    padding: 0; /* 목록 내부 간격 제거 */
+    margin: 0; /* 목록 주변 간격 제거 */
+    }
+
+    .horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* 가로로 배치 */
+    }
+
+    .horizontal-list li {
+    margin-right: 10px; /* 각 항목 사이의 간격 조정 */
+    }
+
+    /* 캡션 스타일 */
+    .image-caption {
+    font-size: 14px;
+    color: #888;
+    text-align: left;
+    }
+
+    .image-gallery {
+    display: flex;
+    }
+
+    .image-gallery figure {
+    margin-right: 20px; /* 각 이미지 사이의 간격 설정 */
+    }
+
+    /* 마지막 figure 요소의 오른쪽 마진 제거 */
+    .image-gallery figure:last-child {
+    margin-right: 0;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <article>
+    <img class="resized-image" src="https://news.airbnb.com/wp-content/uploads/sites/4/2021/07/2014_July@2X.jpg?fit=616%2C616&resize=616%2C616" alt="aribnb">
+    airbnb
+    <button class="right">로그인</button>
+    <div class="right">당신의 공간을 에비앤비하세요 </div>
+  </article>
+</header>
+<hr>
+<main>
+  <h1>이번 주 신규 등록 체험</h1><br>
+  <section>
+    <a href="https://naver.com">
+      <img class="resized-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg/300px-07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg" alt="전 세계 인기 체험">전 세계 인기 체험<button>모두 보기</button>
+    </a>
+    <a href="https://google.com">
+      <img class="resized-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgYkUQrks2z0WfaPww5x6vpmNjswKW2twWVn9sUbhlQ&s" alt="easy for itinery planning">easy for itinery planning<button>모두 보기</button>
+    </a>
+    <a href="https://daum.net">
+      <img class="resized-image" src="https://img.freepik.com/premium-vector/business-organization-people-working-together-teamwork-for-mission-success-teamwork-improve-work_675567-1193.jpg" alt="팀워크">팀워크<button>모두 보기</button>
+    </a>
+  </section>
+  <section>
+    <ul class="horizontal-list">
+      <li><button>날짜</button></li>
+      <li><button>일행당 인원 수</button></li>
+      <li><button>필터 추가하기</button></li>
+      <li>|</li>
+      <li><button>단체로 즐기기에 적함</button></li>
+      <li><button>가족이 즐기기에 적합</button></li>
+      <li><button>동물</button></li>
+    </ul>
+  </section>
+  <hr>
+
+  <h2>전 세계 현지 호스트의 도움을 받아 여행을 계획해보세요</h2>
+  <section class="image-gallery">
+    <figure>
+      <a href="https://naver.com">
+        <img class="resized-image" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202003/27/a9fac36e-c611-4f61-ac3b-63aa7c8153eb.jpg">
+        <figcaption class="image-caption">현지 전문가와 함께 하는 완벽한 여행 계획</figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="https://google.com">
+        <img class="resized-image" src="https://s3-ap-northeast-1.amazonaws.com/thegate/2020/08/12/14/32/34/tokyotower.jpg">
+        <figcaption class="image-caption">나만의 여행</figcaption>
+      </a>
+    </figure>
+    <figure>
+      <a href="https://google.com">
+        <img class="resized-image" src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/20/00/a2000201/img/basic/a2000201_main.jpg">
+        <figcaption class="image-caption">최고의 여행</figcaption>
+      </a>
+    </figure>
+  </section>
+</main>
+<hr>
+<footer>
+  <section>
+    에어비엔비 지원 호스팅 에어비엔비
+  </section>
+  <section>
+    <a href="https://naver.com">도움말 센터</a>
+    <a href="https://google.com">예약 취소</a>
+    <a href="https://daum.net">신고</a>
+  </section>
+</footer>
+</body>
+</html>
