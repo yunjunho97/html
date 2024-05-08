@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--
+        form: 사용자가 입력한 데이터를 서버로 보내기 위한 양식
+        label: input과 연결되어 있는 텍스트
+        input: 사용자가 입력하는 부분
+        button: 사용자가 입력한 데이터를 서버로 보내는 버튼
+    -->
+<!--    <p>태그는 이 폼 안에 들어있는 하나의 문장일뿐이다-->
+    <form action="" method="get">
+        <p>아이디</p>
+        <input type="text" name="아이디">
+        <p>패스워드</p>
+        <input type="text" name="패스워드">
+        <button>로그인</button>
+    </form>
+
+<!--    <label> 사용-->
+    <form action="" method="get">
+        <label for="userId">아이디</label>
+        <input type="text" name="아이디" id="userId">
+        <label for="userPw">패스워드</label>
+        <input type="password" name="패스워드" id="userPw">
+        <p>패스워드는 9자리 이상의 특수문자를 2개 이상 포함해주세요</p>
+        <button>로그인</button>
+    </form>
+</body>
+</html>
