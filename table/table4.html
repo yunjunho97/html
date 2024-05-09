@@ -3,13 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>테이블</title>
+  <style>
+<!--    내부 스타일-->
+    table{
+      color:royalblue;
+      border:1px solid black;
+    }
+    .th_1{
+      color:red;
+    }
+  </style>
+  <link rel="stylesheet" href="style.css"> //외부스타일
 </head>
 <body>
 <table>
   <thead>
   <tr>
-    <th>번호</th>
-    <th>제목</th>
+    <th class="th_1">번호</th>
+    <th style="color:green">제목</th> <!-- 인라인 방식으로 스타일 적용-->
     <th>작성자</th>
     <th>작성일</th>
     <th>조회수</th>
