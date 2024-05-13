@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    header{
+      display: flex;
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+    footer{
+      background-color: teal;
+      color: white;
+      padding: 20px;
+    }
+    .cont-wrapper{
+      display: flex;
+      flex-grow: 1;
+    }
+    .cont-wrapper main{
+      flex-grow: 5;
+      background-color: rosybrown;
+    }
+    .cont-wrapper aside{
+      flex-grow: 1;
+      background-color: royalblue;
+    }
+  </style>
+</head>
+<body>
+  <header>Header</header>
+  <div class="cont-wrapper">
+    <main>Main Content</main>
+    <aside>Sidebar</aside>
+  </div>
+  <footer>Footer</footer>
+</body>
+</html>
